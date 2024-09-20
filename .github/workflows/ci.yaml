@@ -1,0 +1,9 @@
+name: cicd pipeline
+on: push
+
+jobs:
+    build-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: cat command
+          run: cat /etc/passwd
